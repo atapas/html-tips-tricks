@@ -1,0 +1,28 @@
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+a {
+  color: #61dafb;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.demo {
+  margin: 30px auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
