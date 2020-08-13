@@ -1,6 +1,7 @@
 body {
   background-color: #000000;
   color: #ffffff;
+  font-family: 'Chilanka', cursive;
 }
 
 a {
@@ -19,10 +20,24 @@ td {
   border-bottom: 1px solid #ddd;
 }
 
+li {
+    list-style: none;
+}
+
 .demo {
   margin: 30px auto 30px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.demo .list li{
+    padding: 10px;
+}
+
+.demo .content-editable {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
 }
