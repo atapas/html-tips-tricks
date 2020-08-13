@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML Tips and Tricks - Range Slider</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+
+    <script>
+        function changeValue(event) {
+            let value = event.target.value;
+            let output = document.getElementById('output');
+            output.value = value;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="demo">
+        <h1>Slider</h1>
+        <form method="post">
+            <input 
+                type="range" 
+                name="range" 
+                min="0" 
+                max="100" 
+                step="1" 
+                value=""
+                onchange="changeValue(event)"/>
+        </form>
+        <div class="range">
+            <output id="output" name="result">  </output>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+

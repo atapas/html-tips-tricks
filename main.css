@@ -45,3 +45,7 @@ li {
 .demo .data-attribute {
   padding: 10px;
 }
+
+.demo .range output {
+  font-size: 62px;
+}
