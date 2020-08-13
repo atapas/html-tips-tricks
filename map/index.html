@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>HTML Tips and Tricks - Map</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    </head>
+
+    <body>
+        <div class="demo">
+            <h2> Map - Image map </h2>
+            <div>
+                <img src="circus.jpg" width="500" height="500" alt="Circus" usemap="#circusmap">
+
+                <map name="circusmap">
+                    <area shape="rect" coords="67,114,207,254" href="elephant.htm" alt="Elephant">
+                    <area shape="rect" coords="222,141,318, 256" href="lion.htm" alt="Lion">
+                    <area shape="rect" coords="343,111,455, 267" href="horse.htm" alt="Horse">
+                    <area shape="rect" coords="35,328,143,500" href="clown.htm" alt="Clown">
+                    <area shape="circle" coords="426,409,100" href="clown.htm" alt="Clown">
+                </map>
+            </div>
+        </div>
+    </body>
+</html>
