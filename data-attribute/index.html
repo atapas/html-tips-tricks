@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<li>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML Tips and Tricks - Data Attribute</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+
+    <script>
+        function reveal() {
+            let dataDiv = document.getElementById('data-attr');
+            let value = dataDiv.getAttribute('data-custom-attr'); 
+            document.getElementById('msg').innerHTML = `<mark>${value}</mark>`;
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="demo">
+        <h2> Know data attribute </h2>
+        <div class="data-attribute" id="data-attr" data-custom-attr="You are just Awesome!"> I have a hidden secret! </div>
+        <button onclick="reveal()">Reveal</button>
+
+        <br/>
+        
+        <p id="msg"></p>
+    </div>
+</body>

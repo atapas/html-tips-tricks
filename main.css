@@ -41,3 +41,7 @@ li {
     border-radius: 5px;
     padding: 10px;
 }
+
+.demo .data-attribute {
+  padding: 10px;
+}
