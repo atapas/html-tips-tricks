@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML Tips and Tricks - Details Tag</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+</head>
+
+<body>
+    <div class="demo">
+        <h1>All about Inputs</h1>
+
+        <h2>Required</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <input type="submit">
+        </form>
+
+        <h2>Autofocus</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required autofocus>
+            <input type="submit">
+        </form>
+
+        <h2>Placeholder</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <input type="submit">
+        </form>
+
+        <h2>E-mail</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input id="email" name="email" type="email" />
+            <input type="submit">
+        </form>
+
+        <h2>Regex validations</h2>
+        <form>
+            <label for="username">Strong password($Password1234): </label>
+            <input type="password" 
+                    name="password" 
+                    id="password" 
+                    placeholder="6-20 chars, at least 1 digit, 1 uppercase and one lowercase letter" 
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" autofocus required>
+            <button type="submit"> Test </button>
+        </form>
+    </div>
+</body>
+
+</html>
