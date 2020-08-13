@@ -7,6 +7,13 @@
     <title>HTML Tips and Tricks - Inputs</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+
+    <script>
+        function showColor(event) {
+            let colorHex = event.target.value;
+            document.getElementById('colorMe').style.color = colorHex;
+        }
+    </script>
 </head>
 
 <body>
@@ -15,35 +22,35 @@
 
         <h2>Required</h2>
         <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <label for="username1">Username:</label>
+            <input type="text" id="username1" name="username" required>
             <input type="submit">
         </form>
 
         <h2>Autofocus</h2>
         <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required autofocus>
+            <label for="username2">Username:</label>
+            <input type="text" id="username2" name="username" required autofocus>
             <input type="submit">
         </form>
 
         <h2>Placeholder</h2>
         <form>
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <label for="username3">Username:</label>
+            <input type="text" id="username3" name="username" placeholder="Enter your username">
             <input type="submit">
         </form>
 
         <h2>E-mail</h2>
         <form>
-            <label for="username">Username:</label>
+            <label for="email">Username:</label>
             <input id="email" name="email" type="email" />
             <input type="submit">
         </form>
 
         <h2>Regex validations</h2>
         <form>
-            <label for="username">Strong password($Password1234): </label>
+            <label for="password">Strong password($Password1234):</label>
             <input type="password" 
                     name="password" 
                     id="password" 
@@ -51,6 +58,13 @@
                     pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" autofocus required>
             <button type="submit"> Test </button>
         </form>
+
+        <h2>Color picker</h2>
+        <input type="color" onchange="showColor(event)">
+        <p id="colorMe">Color Me!</p>
+        
+        <h2>Voice recognition(Only mobile devices)</h2>
+        <input type="text" x-webkit-speech> 
     </div>
 </body>
 
