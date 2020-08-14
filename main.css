@@ -24,6 +24,13 @@ li {
     list-style: none;
 }
 
+.box {
+  border: 1px dotted;
+  border-radius: 5px;
+  padding: 10px;
+  width: 80%;
+  margin: 10px;
+}
 .demo {
   margin: 30px auto 30px auto;
   display: flex;
