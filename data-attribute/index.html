@@ -12,7 +12,7 @@
     <script>
         function reveal() {
             let dataDiv = document.getElementById('data-attr');
-            let value = dataDiv.getAttribute('data-custom-attr');
+            let value = dataDiv.dataset['customAttr'];
             document.getElementById('msg').innerHTML = `<mark>${value}</mark>`;
         }
 
@@ -25,7 +25,10 @@
             <img src="../home.svg" alt="home" />
         </a>
         <h2> Know data attribute </h2>
-        <div class="data-attribute" id="data-attr" data-custom-attr="You are just Awesome!"> I have a hidden secret!
+        <div 
+            class="data-attribute" 
+            id="data-attr" 
+            data-custom-attr="You are just Awesome!"> I have a hidden secret!
         </div>
         <button onclick="reveal()">Reveal</button>
 
