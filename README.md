@@ -9,3 +9,7 @@ In this repo, I am listing down such `HTML5` features that I haven't used much b
 To read more about this: 
 
 > [10 useful HTML5 features You may not be using](https://blog.greenroots.info/10-useful-html5-features-you-may-not-be-using-ckdua7ql300l1m3s1ez7teshc)
+
+# Many Thanks to all the `Stargazers` who has supported this project with stars(⭐)
+
+[![Stargazers repo roster for @atapas/html-tips-tricks](https://reporoster.com/stars/atapas/html-tips-tricks)](https://github.com/atapas/html-tips-tricks/stargazers)
