@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>HTML Tips and Tricks - Dialog Tag</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+</head>
+
+<body>
+    <div class="demo">
+        <a href="../index.html" class="home">
+          <img src="../home.svg" alt="home" />
+        </a>
+        <h1>Dialog Tag</h1>
+        <!-- Trigger/Open The Modal -->
+        <button id="openDlg">Open Dialog</button>
+
+        <dialog id="dialog">
+            <form method="dialog">
+              <h2>I'm a Dialog</h2>
+              <p>What do you think of me?</p>
+              <menu>
+                <button>Close me</button>
+              </menu>
+            </form>
+        </dialog>  
+
+    </div>
+    <script>
+    // Get the modal
+    const dialog = document.getElementById("dialog");
+    
+    const btn = document.getElementById("openDlg");
+    
+    // When the user clicks the button, open the dialog 
+    btn.onclick = function() {
+        dialog.showModal();
+    }
+    
+    
+    </script>
+        
+</body>
+
+</html>
