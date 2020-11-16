@@ -40,7 +40,7 @@ li {
   margin: 10px;
 }
 .demo {
-  margin: 30px auto 30px auto;
+  margin: 10px auto 30px auto;
   display: flex;
   align-items: center;
   justify-content: center;
