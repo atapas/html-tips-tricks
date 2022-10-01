@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML Tips and Tricks - Field Set</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+  </head>
+
+  <body>
+    <div class="demo">
+      <a href="../index.html" class="home">
+        <img src="../home.svg" alt="home" />
+      </a>
+      <h2>Logically group your form elements using Fieldset</h2>
+      <form>
+        <fieldset>
+          <legend>Do you exercise atleast 30mins per day?</legend>
+          Yes<input name="yes" type="radio" value="yes" /> No<input
+            name="no"
+            type="radio"
+            value="no"
+          />
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+          <legend>What type of books do you like to read?</legend>
+          Action and Adventure<input name="action&adventure" type="radio" />
+          <br />
+          <br />
+          Romance<input name="romance" type="radio" /> <br />
+          <br />
+          Detective and Mystery<input name="detective&mystery" type="radio" />
+          <br />
+          <br />
+          Fantasy<input name="fantasy" type="radio" /> <br />
+          <br />
+          Historical Fiction<input name="historicalfiction" type="radio" />
+          <br />
+          <br />
+          Horror<input name="horror" type="radio" />
+        </fieldset>
+        <br />
+        <br />
+        <fieldset>
+          <legend>What is your favourite programming language?</legend>
+          <input type="text" />
+        </fieldset>
+      </form>
+    </div>
+  </body>
+</html>
