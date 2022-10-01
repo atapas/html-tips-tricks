@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>HTML Tips and Tricks - Template Tag</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            media="screen"
+            href="../main.css"
+        />
+    </head>
+
+    <body>
+        <div class="demo">
+            <a href="../index.html" class="home">
+                <img src="../home.svg" alt="home" />
+            </a>
+            <h1>Template Tag</h1>
+            <!-- Trigger/Open The Modal -->
+            <button id="showTemplate" onClick="showContent()">
+                Show Template
+            </button>
+
+            <template>
+                <p style="text-align: center">
+                    Hacktoberfest is finally here!!!
+                </p>
+                <img
+                    src="hacktoberfest.png"
+                    alt="Hacktoberfest"
+                    width="1920"
+                    height="1000"
+                />
+            </template>
+        </div>
+        <script>
+            const showContent = () => {
+                let temp = document.getElementsByTagName('template')[0];
+                let clon = temp.content.cloneNode(true);
+                document.body.appendChild(clon);
+            };
+        </script>
+    </body>
+</html>
