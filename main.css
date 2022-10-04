@@ -62,7 +62,7 @@ li {
 }
 
 .demo .range output {
-  font-size: 62px;
+  font-size: 61px;
 }
 
 dialog::backdrop {
@@ -75,3 +75,5 @@ dialog::backdrop {
   );
   backdrop-filter: blur(3px);
 }
+
+/* Pavan Kamthane*/
