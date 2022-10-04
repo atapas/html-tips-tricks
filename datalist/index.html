@@ -10,25 +10,47 @@
     <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
 </head>
 
-<body>
+ <body>
     <div class="demo">
         <a href="../index.html" class="home">
           <img src="../home.svg" alt="home" />
         </a>
-        <h1>Datalist Tag</h1>
-        <form action="" method="get">
-            <label for="fruit">Choose your fruit from the list:</label>
-            <input list="fruits" name="fruit" id="fruit">
-            <datalist id="fruits">
-              <option value="Apple">
-              <option value="Orange">
-              <option value="Banana">
-              <option value="Mango">
-              <option value="Avacado">
-            </datalist>
-            <input type="submit">
-          </form>          
-    </div>
-</body>
-
+      <h1>Datalist Tag</h1>
+      <form action="" method="get">
+        <label for="fruit">Choose your fruit from the list:</label>
+        <input list="fruits" name="fruit" id="fruit" />
+        <datalist id="fruits">
+          <option value="Apple"> </option>
+          <option value="Orange"> </option>
+          <option value="Banana"> </option>
+          <option value="Mango"> </option>
+          <option value="Avacado"> </option>
+        </datalist>				
+				<input type="submit" />
+		</div>
+		<div class="demo">
+			<h2>Checkbox</h2>
+				<span>Choose your fruit from the list:</span>
+					<form action="" method="get">
+							<label for="apple"><input list="fruits" name="apple" id="apple" type="checkbox" value="apple" />apple</label>
+							<label for="orange"><input list="fruits" name="orange" id="orange" type="checkbox" value="orange" />orange</label>
+							<label for="banana"><input list="fruits" name="banana" id="banana" type="checkbox" value="banana" />banana</label>
+							<label for="mango"><input list="fruits" name="mango" id="mango" type="checkbox" value="mango" />mango</label>
+							<label for="avacado"><input list="fruits" name="avacado" id="avacado" type="checkbox" value="avacado" />avacado</label>	
+							<input type="submit" />
+					</form> 			
+		</div>
+		<div class="demo">
+				<h2>Radio options</h2>
+					<span>Choose one fruit from this list:</span>
+						<form action="" method="get">
+								<label><input list="oneFruit" type="radio" value="apple" />apple</label>
+								<label><input list="oneFruit" type="radio" value="orange" />orange</label>
+								<label><input list="oneFruit" type="radio" value="banana" />banana</label>
+								<label><input list="oneFruit" type="radio" value="mango" />mango</label>
+								<label><input list="oneFruit" type="radio" value="avacado" />avacado</label>	
+								<input type="submit" />
+						</form> 			
+			</div>
+  </body>
 </html>
