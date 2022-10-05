@@ -37,7 +37,8 @@ li {
   border-radius: 5px;
   padding: 10px;
   width: 80%;
-  margin: 10px;
+  margin: px;
+  text-align: center;
 }
 .demo {
   margin: 10px auto 30px auto;
