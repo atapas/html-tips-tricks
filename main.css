@@ -34,10 +34,10 @@ li {
 
 .box {
   border: 1px dotted;
-  border-radius: 5px;
+  border-radius: 9px;
   padding: 10px;
-  width: 80%;
-  margin: px;
+  width: 70%;
+  margin: 10px;
   text-align: center;
 }
 .demo {
