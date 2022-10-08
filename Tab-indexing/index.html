@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tips and Tricks - Tab-indexing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+</head>
+<body class='demo'>
+    <h1><u>tabIndex Property</u></h1>
+
+<p>Press "Tab" key on your keyboard to navigate to elements in the order of what is given in html file</p>
+<fieldset>
+    <legend>Tab</legend>
+
+    <p><a id="myAnchorTag1" href="https://github.com/atapas/html-tips-tricks" tabIndex="1">Link 1</a> - This element have given tabIndex="1"</p>
+    <p><a id="myAnchorTag2" href="https://github.com/atapas/html-tips-tricks" tabIndex="3">Link 2</a> - This element have given tabIndex="3"</p>
+    <p><a id="myAnchorTag3" href="https://github.com/atapas/html-tips-tricks" tabIndex="2">Link 3</a> - This element have given tabIndex="2"</p>
+    <p><label to="myInput1">Username: </label><input type="text" id="myInputTag1" tabIndex="5" /> - This element have given tabIndex="5"</p>
+    <p><label to="myInput2">Password: </label><input type="password" id="myInputTag2" tabIndex="4" /> - This element have given tabIndex="4"</p>
+    <p></p><button type="submit" id="myInputTag3" tabIndex="6">Submit</button> - This element have given tabIndex="6"</p>
+</fieldset>
+
+</body>
+</html>
