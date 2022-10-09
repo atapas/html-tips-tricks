@@ -1,82 +1,123 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>HTML Tips and Tricks - Inputs</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
-    <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
 
     <script>
-        function showColor(event) {
-            let colorHex = event.target.value;
-            document.getElementById('colorMe').style.color = colorHex;
-        }
+      function showColor(event) {
+        let colorHex = event.target.value;
+        document.getElementById("colorMe").style.color = colorHex;
+      }
     </script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="demo">
-        <a href="../index.html" class="home">
-            <img src="../home.svg" alt="home" />
-        </a>
-        <h1>All about Inputs</h1>
+      <a href="../index.html" class="home">
+        <img src="../home.svg" alt="home" />
+      </a>
+      <h1>All about Inputs</h1>
 
-        <h2>Color picker</h2>
-        <input type="color" onchange="showColor(event)">
-        <p id="colorMe">Color Me!</p>
+      <h2>Color picker</h2>
+      <input type="color" onchange="showColor(event)" />
+      <p id="colorMe">Color Me!</p>
 
-        <div class="box">
-            <h2>Required</h2>
-            <form>
-                <label for="username1">Username:</label>
-                <input type="text" id="username1" name="username" required>
-                <input type="submit">
-            </form>
-        </div>
+      <div class="box">
+        <h2>Required</h2>
+        <form>
+          <label for="username1">Username:</label>
+          <input type="text" id="username1" name="username" required />
+          <input type="submit" />
+        </form>
+      </div>
 
-        <div class="box">
-            <h2>Autofocus</h2>
-            <form>
-                <label for="username2">Username:</label>
-                <input type="text" id="username2" name="username" required autofocus>
-                <input type="submit">
-            </form>
-        </div>
+      <div class="box">
+        <h2>Autofocus</h2>
+        <form>
+          <label for="username2">Username:</label>
+          <input
+            type="text"
+            id="username2"
+            name="username"
+            required
+            autofocus
+          />
+          <input type="submit" />
+        </form>
+      </div>
 
-        <div class="box">
-            <h2>Placeholder</h2>
-            <form>
-                <label for="username3">Username:</label>
-                <input type="text" id="username3" name="username" placeholder="Enter your username">
-                <input type="submit">
-            </form>
-        </div>
+      <div class="box">
+        <h2>Placeholder</h2>
+        <form>
+          <label for="username3">Username:</label>
+          <input
+            type="text"
+            id="username3"
+            name="username"
+            placeholder="Enter your username"
+          />
+          <input type="submit" />
+        </form>
+      </div>
 
-        <div class="box">
-            <h2>E-mail</h2>
-            <form>
-                <label for="email">Username:</label>
-                <input id="email" name="email" type="email" />
-                <input type="submit">
-            </form>
-        </div>
+      <div class="box">
+        <h2>E-mail</h2>
+        <form>
+          <label for="email">Username:</label>
+          <input id="email" name="email" type="email" />
+          <input type="submit" />
+        </form>
+      </div>
 
-        <div class="box">
-            <h2>Regex validations</h2>
-            <form>
-                <label for="password">Strong password($Password1234):</label>
-                <input type="password" 
-                        name="password" 
-                        id="password" 
-                        placeholder="6-20 chars, at least 1 digit, 1 uppercase and one lowercase letter" 
-                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" autofocus required>
-                <button type="submit"> Test </button>
-            </form>
-        </div>        
+      <div class="box">
+        <h2>Regex validations</h2>
+        <form>
+          <label for="password">Strong password($Password1234):</label>
+          <input
+            type="password"
+            name="password"
+            id="password"
+            placeholder="6-20 chars, at least 1 digit, 1 uppercase and one lowercase letter"
+            pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$"
+            autofocus
+            required
+          />
+          <button type="submit">Test</button>
+        </form>
+      </div>
+      <div class="box">
+        <h2>Auto Complete</h2>
+        <form autocomplete="on">
+          <label for="fname">First name:</label>
+          <input type="text" id="fname" name="fname" /><br /><br />
+          <label for="lname">Last name:</label>
+          <input type="text" id="lname" name="lname" /><br /><br />
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="off"
+          /><br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+      <div class="box">
+        <h2>Fixed input value</h2>
+        <form autocomplete="on">
+          <label for="fname">User name(4 to 12 character):</label>
+          <input type="text" id="username" name="username" minlength="4" maxlength="12" />
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
