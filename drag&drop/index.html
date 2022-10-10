@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>HTML Tips and Tricks - Output</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="../main.css" />
+
+    <style>
+      #div1 {
+        width: 180px;
+        height: 250px;
+        padding: 10px;
+        border: 1px solid #aaaaaa;
+        background-color: #fff;
+      }
+    </style>
+    <script>
+      function allowDrop(ev) {
+        ev.preventDefault();
+      }
+
+      function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }
+
+      function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }
+    </script>
+  </head>
+  <body>
+    <div class="demo">
+      <a href="../index.html" class="home">
+        <img src="../home.svg" alt="home" />
+      </a>
+      <p>Drag the image into the rectangle:</p>
+
+      <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+      <img
+        id="drag1"
+        src="../html5.png"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="160"
+        height="220"
+      />
+    </div>
+  </body>
+</html>
