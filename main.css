@@ -75,3 +75,9 @@ dialog::backdrop {
   );
   backdrop-filter: blur(3px);
 }
+
+#img-tooltip{
+  background-color: wheat;
+  width:30%;
+  height:30%;
+}
