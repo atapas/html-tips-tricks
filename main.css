@@ -75,3 +75,8 @@ dialog::backdrop {
   );
   backdrop-filter: blur(3px);
 }
+
+
+.embed-youtube {
+  border: 1px solid #ffffff;
+}
