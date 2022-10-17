@@ -16,7 +16,7 @@
                 <img src="../home.svg" alt="home" />
             </a>
             <h2> Let's see the Output </h2>
-            <form oninput="x.value=parseInt(a.value) * parseInt(b.value)">
+            <form oninput="var n = parseInt(a.value) * parseInt(b.value); x.value= isNaN(n) ? 0 : n">
                 <input type="number" id="a" value="0">
                 * <input type="number" id="b" value="0">
                 = <output name="x" for="a b"></output>
