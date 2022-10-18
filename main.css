@@ -119,6 +119,7 @@ dialog::backdrop {
   );
   backdrop-filter: blur(3px);
 }
+
 .figure {
   margin: 10px auto 30px auto;
   display: flex;
@@ -143,3 +144,9 @@ justify-content: center;
 flex-direction: column;
 }
 
+
+
+
+.embed-youtube {
+  border: 1px solid #ffffff;
+}
