@@ -75,7 +75,30 @@
                         pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" autofocus required>
                 <button type="submit"> Test </button>
             </form>
-        </div>        
+        </div>
+
+        <div class="box">
+            <h2>Date picker</h2>
+            <form>
+                <label for="date-picker">Select a date</label>
+                <input type="date"
+                        name="date"
+                        id="date-picker"
+                        min="1999-05-20"
+                        max="2025-10-05"
+                        value="2022-10-10">
+            </form>
+        </div>
+
+        <div class="box">
+            <h2>Time select</h2>
+            <form>
+                <label for="time-select">Select time</label>
+                <input type="time"
+                       name="time"
+                       id="time-select">
+            </form>
+        </div>
     </div>
 </body>
 
