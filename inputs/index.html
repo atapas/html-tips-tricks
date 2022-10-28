@@ -68,14 +68,42 @@
             <h2>Regex validations</h2>
             <form>
                 <label for="password">Strong password($Password1234):</label>
-                <input type="password" 
-                        name="password" 
-                        id="password" 
-                        placeholder="6-20 chars, at least 1 digit, 1 uppercase and one lowercase letter" 
-                        pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" autofocus required>
+                <input type="password" name="password" id="password"
+                    placeholder="6-20 chars, at least 1 digit, 1 uppercase and one lowercase letter"
+                    pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,20}$" autofocus required>
                 <button type="submit"> Test </button>
             </form>
-        </div>        
+        </div>
+
+        <div class="box">
+            <h2>Allow only integer</h2>
+            <form>
+                <label for="intfield">Allow only integer</label>
+                <input id="intfield" type="text" onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="10">
+            </form>
+        </div>
+
+        <div class="box">
+            <h2>Mobile Number validation using Regex (Allow only the phone number which starts with 7,8 and 9)</h2>
+            <form>
+                <label for="mobilenumbervalidation">Mobile Number</label>
+                <input id="mobilenumbervalidation" type="text" pattern="[789][0-9]{9}" autofocus required>
+                <button type="submit"> Test </button>
+            </form>
+        </div>
+
+
+        <div class="box">
+            <h2>Full Name Validation</h2>
+            <form>
+                <label for="fullnamevalidationid">Full Name</label>
+                <input id="fullnamevalidationid" type="text" name="fullName" onkeypress="return (event.charCode > 64 && 
+        event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)" placeholder="Full Name">
+                <button type="submit"> Test </button>
+            </form>
+        </div>
+
+
     </div>
 </body>
 
