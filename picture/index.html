@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <title>HTML Tips and Tricks - Picture</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link href="https://fonts.googleapis.com/css2?family=Chilanka&display=swap" rel="stylesheet">
+        <link rel='stylesheet' type='text/css' media='screen' href='../main.css'>
+    </head>
+
+    <body>
+        <div class="demo">
+        <a href="../index.html" class="home">
+            <img src="../home.svg" alt="home" />
+        </a>
+        <h1>Picture Tag</h1>
+        <picture>
+            <source media="(min-width:650px)" srcset="https://picsum.photos/650/500">
+            <source media="(min-width:465px)" srcset="https://picsum.photos/465/300">
+            <img src="https://picsum.photos/1000/800" alt="Flowers" style="width:auto;">
+          </picture>
+        </div>
+
+    </body>
+</html>
