@@ -1,11 +1,30 @@
 body {
-  background-color: #000000;
-  color: #ffffff;
-  font-family: 'Chilanka', cursive;
+  background-color: rgb(10, 10, 57);
+  color: #f4dddd;
+  font-family: 'Montserrat', sans-serif;
+ /* font-family: 'Silkscreen', cursive;*/
+}
+h1
+{
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Silkscreen', cursive;
+}
+
+.body {
+  background-image: url("https://i.pinimg.com/564x/ce/1f/8a/ce1f8a647a8634f7eb59fb3b28130169.jpg");
+  background-size: contain;
+  background-repeat: repeat-y;
+  color: #f4dddd;
+ /* font-family: 'Montserrat', sans-serif;
+  font-family: 'Silkscreen', cursive;*/
+}
+.div
+{
+  margin-top: 70px;
 }
 
 a {
-  color: #61dafb;
+  color: #c3b1ec;
 }
 
 table {
@@ -64,6 +83,31 @@ li {
 .demo .range output {
   font-size: 62px;
 }
+.demoo {
+  margin: 420px auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.demoo .list li{
+    padding: 10px;
+}
+
+.demoo .content-editable {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.demoo .data-attribute {
+  padding: 10px;
+}
+
+.demoo .range output {
+  font-size: 62px;
+}
 
 dialog::backdrop {
   background: repeating-linear-gradient(
@@ -75,6 +119,32 @@ dialog::backdrop {
   );
   backdrop-filter: blur(3px);
 }
+
+.figure {
+  margin: 10px auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+  figcaption
+{
+  margin: 10px auto 30px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+}
+figure{
+margin: 10px auto 30px auto;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
 
 
 .embed-youtube {
