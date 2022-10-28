@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<title>HTML5 localStorage Example</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="StorageStyle.css">
+	<script src="Storage.js"></script>
+</head>
+<body onload="doShowAll()">
+	<h1>Enter Items And Quantity</h1>
+	<form name=ShoppingList>
+		<div id="PlayArea">
+			<table>
+				<tr>
+					<td><b>Item:</b><input type=text name=name></td>
+					<td><b>Quantity:</b><input type=text name=data></td>
+				</tr>
+				<tr>
+					<td>
+					    <input type=button value="Save"   onclick="SaveItem()"> 
+					    <input type=button value="Modify" onclick="ModifyItem()"> 
+					    <input type=button value="Remove" onclick="RemoveItem()">
+					  </td>
+				</tr>
+			</table>
+		</div>
+		<div id="items_table">
+			<h2>Shopping List</h2>
+			<table id=list></table>
+			<p>
+				<label><input type=button value="Clear" onclick="ClearAll()">
+					<i>* Removes all items</i></label>
+			</p>
+		</div>
+	</form>
+
+</body>
+</html>
