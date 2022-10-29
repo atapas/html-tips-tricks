@@ -1,0 +1,1 @@
+the kbd tag is use to specify the keyboard commmand for different Operating System.
