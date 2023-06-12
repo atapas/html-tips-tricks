@@ -1,0 +1,61 @@
+body {
+    background-image: url(https://source.unsplash.com/1600x1366/?landscape); 
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+#div1,
+#div2 {
+    width: 10vw;
+    height: 10vw;
+    border: 1px solid red;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.container {
+    display: flex;
+    margin-top: 10vh;
+    width: 70vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.dragDiv {
+    width: 10vw;
+    height: 10vw;
+}
+
+.dragImage {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.verdict{
+    width: 70vw;
+    font-size: 1.5rem;
+    margin: 0 auto 0 auto;
+}
+
+.card{
+    background: rgba(0, 0, 0, 0.685);
+  color: white;
+  border-radius: 10px;
+  max-width: 300px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        font-size: 120%;
+    }
+    .card{
+        border-radius: 15px;
+        max-width: 450px;
+        
+    }
+}
