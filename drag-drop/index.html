@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Tips Website</title>
+    <link href="ssets/images/favicon.png" rel="icon">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="assets/drag.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c1e61fbc1e.js" crossorigin="anonymous"></script>
+    <script src="assets/index.js" defer></script>
+</head>
+
+<body>
+        <div class="card">
+            <p align="center" >Drag any weather condition image here 👇</p>
+         </div>
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+       <div class="container">
+           <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img class="dragImage sunny"
+                   src="assets/images/sunny.jpg"
+                   draggable="true" ondragstart="drag(event)" id="drag1">
+           </div>
+           <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img class="dragImage rainy"
+                   src="assets/images/rainy.jpg"
+                   draggable="true" ondragstart="drag(event)" id="drag2">
+           </div>
+           <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img class="dragImage winter"
+                   src="assets/images/winter.jpg" draggable="true"
+                   ondragstart="drag(event)" id="drag3">
+           </div>
+           <div class="dragDiv" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+               <img class="dragImage smog"
+                   src="assets/images/smog.jpg"
+                   draggable="true" ondragstart="drag(event)" id="drag4">
+           </div>
+       </div>
+       <div class="card" style="max-width: 950px;">
+       <p class="verdict"></p>
+       </div>
+       <script src="assets/dragAndDrop.js"></script>
+   </body>
+   </html>
